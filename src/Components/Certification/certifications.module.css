@@ -1,0 +1,91 @@
+.certificationDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e2931;
+  padding: 5px 5px;
+  min-height: 580px;
+}
+#certifictionHeading {
+  font-family: "Poppins";
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#certifictionHeading span {
+  margin-left: 5%;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: white;
+  text-decoration-color: #0db3c7;
+  cursor: pointer;
+}
+#certifictionHeading span:hover {
+  color: #0db3c7;
+  text-decoration-color: white;
+  transition: all 0.3s;
+}
+#certificationCardsDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 525px;
+  overflow-y: scroll;
+
+  padding-bottom: 10px;
+}
+#certificationCardsDiv {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+#certificationCardsDiv::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.certCard {
+  display: flex;
+  width: 47%;
+  background-color: #101010;
+  border: 1px solid #1e2931;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  margin-top: 17px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.certCard:hover {
+  border: 1px solid #f9004d;
+  box-shadow: 0px 0px 10px #f9004d;
+  transition: all 0.2s;
+}
+.certInstLogo {
+  display: flex;
+  width: 15%;
+}
+.certInstLogo img {
+  width: 100%;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #f9004d;
+}
+.certDetails {
+  font-family: "Raleway";
+  width: 73%;
+  margin-left: 3%;
+}
+.certName {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffc000;
+}
+.keySkillName {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+.keySkillName span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0db3c7;
+}

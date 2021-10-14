@@ -1,0 +1,83 @@
+.experienceDiv {
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: column;
+  background-color: #101010;
+  min-height: 580px;
+}
+#experienceHeading {
+  font-family: "Poppins";
+  display: inline;
+  width: 13%;
+  color: #f9004d;
+  text-decoration: underline;
+  text-decoration-color: white;
+  font-weight: 500;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  cursor: pointer;
+}
+#experienceHeading:hover {
+  color: white;
+  text-decoration-color: #f9004d;
+  transition: all 0.2s;
+}
+#experienceCardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 60%;
+}
+.cardExperience {
+  display: flex;
+  min-height: 230px;
+  max-height: 230px;
+  background-color: #1e2931;
+  flex-direction: row;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 5px white;
+}
+.cardExperience:hover {
+  border-color: #f9004d;
+  box-shadow: 0px 0px 5px #f9004d;
+  transition: all 0.3s;
+}
+.cardExperience p {
+  margin: 2px;
+}
+.companyLogoDiv {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 2px solid gray;
+  cursor: pointer;
+}
+.companyLogoDiv:hover {
+  border-right: 2px solid #f9004d;
+  transition: all 0.2s;
+}
+.companyLogoDiv img {
+  align-self: center;
+  border-radius: 50%;
+  width: 80%;
+  height: 70%;
+}
+.companyDetailsDiv {
+  font-family: "Roboto";
+  width: 70%;
+  padding: 30px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+}
+.headingsCompanyDetails {
+  color: #0db3c7;
+}

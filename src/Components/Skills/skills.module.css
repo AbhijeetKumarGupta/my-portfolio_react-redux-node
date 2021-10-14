@@ -1,0 +1,74 @@
+.skillsDiv {
+  display: flex;
+  padding: 15px 10px;
+  flex-direction: column;
+  background-position: 0px 0px, 0% -30%;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
+  background-repeat: no-repeat;
+  min-height: 580px;
+}
+#skillsHeading {
+  font-family: "Poppins";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+#skillsHeading span {
+  text-decoration: underline;
+  text-decoration-color: #0db3c7;
+  margin-left: 5%;
+  cursor: pointer;
+}
+#skillsHeading span:hover {
+  color: #0db3c7;
+  text-decoration: underline;
+  text-decoration-color: #101010;
+  transition: all 0.2s;
+}
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardSkill {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-bottom: 40px;
+  width: 10%;
+  height: 200px;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 0px 0px 5px black;
+  background-color: white;
+}
+.cardSkill:hover {
+  box-shadow: 0px 0px 5px #0db3c7;
+  transition: all 0.3s;
+}
+.skillLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+  height: 70%;
+  cursor: pointer;
+}
+.skillLogo img {
+  width: 80%;
+  height: 70%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #0db3c7;
+}
+.skillName {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #101010;
+}
