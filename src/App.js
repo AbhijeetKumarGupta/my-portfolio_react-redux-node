@@ -32,10 +32,10 @@ class App extends Component {
         this.props.setLinks(result[3]);
         this.props.setHomeBackImage(result[0].otherImages.homeBackImage);
         this.props.setAboutImage(result[0].otherImages.aboutImage);
-        this.props.setAboutPara(result[1].aboutInfo.aboutPara);
+        this.props.setAboutPara(result[2].aboutInfo.aboutPara);
         this.props.setSkillsBackImage(result[0].otherImages.skillsBackImage);
         this.props.setContactBackImage(result[0].otherImages.contactBackImage);
-        this.props.setContactData(result[2].contactInfo);
+        this.props.setContactData(result[1].contactInfo);
       });
   }
   render() {
