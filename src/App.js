@@ -27,7 +27,7 @@ class App extends Component {
     fetch("https://pf-backend-api.herokuapp.com/others")
       .then((res) => res.json())
       .then((result) => {
-        this.setState({ otherData: result });
+        this.setState({ otherData: result[0] });
         this.props.setLogo(result[0].otherImages.topbarLogo);
         this.props.setLinks(result[0].links);
         this.props.setHomeBackImage(result[0].otherImages.homeBackImage);

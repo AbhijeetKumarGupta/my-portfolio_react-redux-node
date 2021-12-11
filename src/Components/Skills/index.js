@@ -20,7 +20,7 @@ class Skills extends Component {
         <div id={styles.skillsHeading}>
           <span>Skills</span>
         </div>
-        <div id={styles.skills}>
+        <div id={styles.skills} className={styles.cardsDiv}>
           {this.props.skillsData.length > 0 &&
             this.props.skillsData.map(({ name, logo, detailLink }, index) => (
               <div className={styles.cardSkill} key={index}>

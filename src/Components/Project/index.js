@@ -27,6 +27,7 @@ class Project extends Component {
   }
 
   handleSelect = (e) => {
+    console.log(e.target.id);
     this.props.setProjectCurSel(parseInt(e.target.id));
     this.props.setProjectDesc(
       this.props.projectsData[parseInt(e.target.id)].description.split("\n")

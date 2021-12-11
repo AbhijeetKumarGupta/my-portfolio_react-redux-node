@@ -1,17 +1,20 @@
 .skillsDiv {
   display: flex;
-  padding: 15px 10px;
-  flex-direction: column;
+  padding: 0px 10px 75px 10px;
   background-position: 0px 0px, 0% -30%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
   background-repeat: no-repeat;
-  min-height: 580px;
+  min-height: 90vh;
+  max-height: 610px;
+  box-sizing: border-box;
 }
 #skillsHeading {
+  display: flex;
+  width: 100%;
   font-family: "Poppins";
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5vh;
   font-size: 30px;
   font-weight: 500;
 }
@@ -31,16 +34,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y: scroll;
+  width: 100%;
+}
+#skills {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+#skills::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 .cardSkill {
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
   padding: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
   width: 10%;
   height: 200px;
   border-radius: 20px;
+  margin-top: 5px;
   margin-left: 5%;
   margin-right: 5%;
   box-shadow: 0px 0px 5px black;
@@ -71,4 +84,23 @@
   font-size: 20px;
   font-weight: 500;
   color: #101010;
+}
+
+@media screen and (max-width: 768px) {
+  .skillsDiv {
+    background-size: 170% 120%;
+    background-position: top right;
+  }
+  #skills {
+    justify-content: center;
+  }
+  .cardsDiv {
+    overflow-y: scroll;
+    height: 460px;
+  }
+  .cardSkill {
+    width: 40%;
+    max-width: 180px;
+    margin: 10px 50px;
+  }
 }

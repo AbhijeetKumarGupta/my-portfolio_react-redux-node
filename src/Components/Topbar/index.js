@@ -5,7 +5,7 @@ import styles from "./topbar.module.css";
 class Topbar extends Component {
   scrollTo = (val) => {
     window.scrollTo({
-      top: val,
+      top: window.innerHeight * val,
       behavior: "smooth",
       sel: 0,
     });
@@ -40,42 +40,42 @@ class Topbar extends Component {
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(625)}
+            onClick={() => this.scrollTo(0.93)}
           >
             About
           </span>
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(1250)}
+            onClick={() => this.scrollTo(1.845)}
           >
             Experience
           </span>
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(1865)}
+            onClick={() => this.scrollTo(2.77)}
           >
             Skills
           </span>
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(2470)}
+            onClick={() => this.scrollTo(3.68)}
           >
             Certification
           </span>
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(3080)}
+            onClick={() => this.scrollTo(4.56)}
           >
             Projects
           </span>
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(3685)}
+            onClick={() => this.scrollTo(5.55)}
           >
             Contact
           </span>

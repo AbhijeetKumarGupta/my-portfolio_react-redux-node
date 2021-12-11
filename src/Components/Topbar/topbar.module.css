@@ -1,17 +1,20 @@
 .topbarDiv {
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-  min-height: 60px;
+  width: inherit;
+  min-height: 70px;
   padding: 5px;
   background-color: #1e2931;
   z-index: 100;
+  box-sizing: border-box;
 }
 #logoDiv {
   display: flex;
   margin-left: 5%;
+  min-width: 50px;
   width: 4%;
+  height: 100%;
   border-radius: 50%;
   padding: 2px;
   border: 2px solid #1e2931;
@@ -20,6 +23,9 @@
 #logoDiv:hover {
   border: 2px solid #f9004d;
   transition: all 0.3s;
+}
+#logoDiv img {
+  max-height: 70px;
 }
 .userLogo {
   box-shadow: 0px 0px 2px white;
@@ -39,6 +45,7 @@
   padding-right: 15%;
   cursor: pointer;
   font-size: 120%;
+  min-width: 30px;
 }
 #publicProfileLinksDiv a:hover {
   color: #f9004d;
@@ -51,6 +58,7 @@
   align-items: center;
   width: 50%;
   margin-left: 15%;
+  box-sizing: border-box;
 }
 .navMenuItem {
   font-family: "Poppins";
@@ -68,4 +76,25 @@
   border-left: 2px solid #f9004d;
   border-right: 2px solid #f9004d;
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 1128px) {
+  .topbarDiv {
+    justify-content: space-between;
+    width: inherit;
+    box-sizing: border-box;
+  }
+  #publicProfileLinksDiv a {
+    box-sizing: border-box;
+  }
+
+  #navMenuDiv {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #publicProfileLinksDiv {
+    padding: 0px 20px;
+  }
 }

@@ -4,6 +4,8 @@
   background-color: #101010;
   color: white;
   padding: 15px;
+  box-sizing: border-box;
+  max-height: 15vh;
 }
 .footerDiv img {
   width: 70px;

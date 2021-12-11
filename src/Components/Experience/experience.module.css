@@ -3,7 +3,7 @@
   padding: 10px 0px;
   flex-direction: column;
   background-color: #101010;
-  min-height: 580px;
+  min-height: 90vh;
 }
 #experienceHeading {
   font-family: "Poppins";
@@ -15,7 +15,7 @@
   font-weight: 500;
   font-size: 35px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5vh;
   margin-left: 70px;
   cursor: pointer;
 }
@@ -27,10 +27,17 @@
 #experienceCardWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow-y: scroll;
   align-self: center;
+  max-height: 72vh;
   width: 60%;
+}
+#experienceCardWrapper {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+#experienceCardWrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 .cardExperience {
   display: flex;
@@ -39,7 +46,7 @@
   background-color: #1e2931;
   flex-direction: row;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
   border: 2px solid white;
   box-shadow: 0px 0px 5px white;
 }
@@ -80,4 +87,42 @@
 }
 .headingsCompanyDetails {
   color: #0db3c7;
+}
+
+@media screen and (max-width: 768px) {
+  #experienceHeading {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+  .cardExperience {
+    flex-direction: column;
+  }
+  .companyLogoDiv {
+    width: 30%;
+    border: none;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .companyLogoDiv img {
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+  }
+  .companyLogoDiv:hover {
+    border-radius: 0px;
+    border-right: none;
+  }
+  .companyDetailsDiv:hover {
+    border-top: 2px solid #f9004d;
+    transition: all 0.2s;
+  }
+
+  .companyDetailsDiv {
+    padding: 10px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    border-top: 2px solid gray;
+    border-radius: 0px;
+    width: 90%;
+  }
 }

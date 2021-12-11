@@ -2,7 +2,9 @@
   display: flex;
   padding: 10px 0px;
   background-color: #191919;
-  min-height: 580px;
+  min-height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 #aboutLeftDiv {
   display: flex;
@@ -42,4 +44,32 @@
   font-family: "Raleway";
   font-size: 20px;
   padding-right: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+  #aboutHeading {
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutDiv {
+    flex-direction: column;
+  }
+  #aboutLeftDiv {
+    width: 100%;
+  }
+  #aboutRightDiv {
+    width: 100%;
+  }
+  #aboutHeading {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    padding: 0% 10%;
+    box-sizing: border-box;
+  }
+  #aboutDescription {
+    padding: 0% 10%;
+  }
 }

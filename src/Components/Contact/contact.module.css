@@ -1,10 +1,11 @@
 .contactDiv {
   font-size: 22px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   background-position: 0px 0px, 100% -20%;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
   background-repeat: no-repeat;
+  min-height: 75vh;
 }
 #contactHeading {
   font-family: "Raleway";
@@ -76,4 +77,19 @@
   font-family: "Roboto";
   font-weight: 300;
   color: #1e2931;
+}
+
+@media screen and (max-width: 768px) {
+  .contactDiv {
+    background-size: 170% 85%;
+    background-position: bottom right;
+  }
+  #contactOptionsDiv {
+    width: 80%;
+  }
+  #contactAddress {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 5%;
+  }
 }
