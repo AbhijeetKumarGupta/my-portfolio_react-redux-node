@@ -40,7 +40,7 @@ class Topbar extends Component {
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(0.93)}
+            onClick={() => this.scrollTo(0.935)}
           >
             About
           </span>
@@ -54,21 +54,21 @@ class Topbar extends Component {
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(2.77)}
+            onClick={() => this.scrollTo(2.75)}
           >
             Skills
           </span>
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(3.68)}
+            onClick={() => this.scrollTo(3.66)}
           >
             Certification
           </span>
 
           <span
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(4.56)}
+            onClick={() => this.scrollTo(4.55)}
           >
             Projects
           </span>

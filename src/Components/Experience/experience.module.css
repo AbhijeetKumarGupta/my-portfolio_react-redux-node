@@ -1,6 +1,6 @@
 .experienceDiv {
   display: flex;
-  padding: 10px 0px;
+  padding: 10px 0px 5px 0px;
   flex-direction: column;
   background-color: #101010;
   min-height: 90vh;
@@ -29,7 +29,7 @@
   flex-direction: column;
   overflow-y: scroll;
   align-self: center;
-  max-height: 72vh;
+  max-height: 74vh;
   width: 60%;
 }
 #experienceCardWrapper {
