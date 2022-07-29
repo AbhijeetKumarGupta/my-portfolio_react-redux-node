@@ -1,6 +1,6 @@
 .aboutDiv {
   display: flex;
-  padding: 10px 0px;
+  padding: 7% 0px;
   background-color: #191919;
   min-height: 90vh;
   width: 100%;
@@ -42,7 +42,7 @@
 }
 #aboutDescription {
   font-family: "Raleway";
-  font-size: 20px;
+  font-size: 150%;
   padding-right: 120px;
 }
 

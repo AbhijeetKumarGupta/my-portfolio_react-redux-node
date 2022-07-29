@@ -44,7 +44,7 @@ class Project extends Component {
 
   render() {
     return (
-      <>
+      <div id="projects">
         {this.props.viewFrame === "0" ? (
           <div className={styles.projectDiv}>
             <div id={styles.projectHeading}>
@@ -125,7 +125,7 @@ class Project extends Component {
             />
           </div>
         )}
-      </>
+      </div>
     );
   }
 }

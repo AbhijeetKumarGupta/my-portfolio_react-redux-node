@@ -23,6 +23,7 @@
   height: 100%;
   min-height: 85vh;
   overflow-x: hidden;
+  padding: 6% 0px;
 }
 .frameDiv button {
   border: none;
@@ -43,6 +44,7 @@
 /*//////////////////////////////*/
 .projectDiv {
   background-color: #101010;
+  padding: 6% 0px 6% 0px;
   min-height: 90vh;
 }
 #projectHeading {
@@ -72,7 +74,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 5px;
-  height: 490px;
+  height: 560px;
   width: 50%;
   overflow-y: scroll;
 }
@@ -136,7 +138,7 @@
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #000;
-  height: 470px;
+  height: 530px;
   margin-bottom: 35px;
   margin-right: 20px;
 }

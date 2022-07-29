@@ -45,7 +45,7 @@ class App extends Component {
         this.props.setSkillsBackImage(result[0].otherImages.skillsBackImage);
         this.props.setContactBackImage(result[0].otherImages.contactBackImage);
         this.props.setContactData(result[0].contactInfo);
-        setTimeout(() => this.setState({ loaded: true }), 6000);
+        setTimeout(() => this.setState({ loaded: true }), 1000);
       });
   }
 

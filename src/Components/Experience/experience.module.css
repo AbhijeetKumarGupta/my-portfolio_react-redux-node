@@ -1,6 +1,6 @@
 .experienceDiv {
   display: flex;
-  padding: 10px 0px 5px 0px;
+  padding: 6% 0px;
   flex-direction: column;
   background-color: #101010;
   min-height: 90vh;
@@ -31,6 +31,7 @@
   align-self: center;
   max-height: 74vh;
   width: 60%;
+  padding: 5px 0px;
 }
 #experienceCardWrapper {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -41,8 +42,8 @@
 }
 .cardExperience {
   display: flex;
-  min-height: 230px;
-  max-height: 230px;
+  height: 70%;
+  max-height: 250px;
   background-color: #1e2931;
   flex-direction: row;
   border-radius: 20px;

@@ -8,57 +8,59 @@ class Contact extends Component {
       backgroundImage: `linear-gradient(360deg,rgba(255, 255, 255, 0) 100%,rgba(255, 255, 255, 0) 100%),url(${this.props.image})`,
     };
     return (
-      <div id={styles.contact} className={styles.contactDiv} style={style}>
-        <div id={styles.contactHeading}>
-          <span>Contact Info</span>
-        </div>
-        <div id={styles.contactOptionsDiv}>
-          <div id={styles.contactAddress}>
-            <div>
-              <i
-                className={`fas fa-map-marked-alt ${styles.addressLine}`}
-                aria-hidden="true"
-              >
-                {" "}
-                <span>
-                  Address: <span>{this.props.contactData.address}</span>
-                </span>
-              </i>
-              <i
-                className={`fas fa-phone-alt ${styles.addressLine}`}
-                aria-hidden="true"
-              >
-                {" "}
-                <span>
-                  Phone: <span>{this.props.contactData.phone}</span>
-                </span>
-              </i>
-              <i
-                className={`fas fa-envelope ${styles.addressLine}`}
-                aria-hidden="true"
-              >
-                {" "}
-                <span>
-                  Email: <span>{this.props.contactData.email}</span>
-                </span>
-              </i>
-              <i
-                className={`fa fa-linkedin ${styles.addressLine}`}
-                aria-hidden="true"
-              >
-                {" "}
-                <span>Linked-In:</span>
-                <a
-                  id={styles.profileLinkContact}
-                  href={this.props.links.linkedInLink}
+      <div id="contact">
+        <div id={styles.contact} className={styles.contactDiv} style={style}>
+          <div id={styles.contactHeading}>
+            <span>Contact Info</span>
+          </div>
+          <div id={styles.contactOptionsDiv}>
+            <div id={styles.contactAddress}>
+              <div>
+                <i
+                  className={`fas fa-map-marked-alt ${styles.addressLine}`}
+                  aria-hidden="true"
                 >
                   {" "}
-                  GO
-                </a>
-              </i>
+                  <span>
+                    Address: <span>{this.props.contactData.address}</span>
+                  </span>
+                </i>
+                <i
+                  className={`fas fa-phone-alt ${styles.addressLine}`}
+                  aria-hidden="true"
+                >
+                  {" "}
+                  <span>
+                    Phone: <span>{this.props.contactData.phone}</span>
+                  </span>
+                </i>
+                <i
+                  className={`fas fa-envelope ${styles.addressLine}`}
+                  aria-hidden="true"
+                >
+                  {" "}
+                  <span>
+                    Email: <span>{this.props.contactData.email}</span>
+                  </span>
+                </i>
+                <i
+                  className={`fa fa-linkedin ${styles.addressLine}`}
+                  aria-hidden="true"
+                >
+                  {" "}
+                  <span>Linked-In:</span>
+                  <a
+                    id={styles.profileLinkContact}
+                    href={this.props.links.linkedInLink}
+                  >
+                    {" "}
+                    GO
+                  </a>
+                </i>
+              </div>
             </div>
+            <div id={styles.contactForm}></div>
           </div>
-          <div id={styles.contactForm}></div>
         </div>
       </div>
     );

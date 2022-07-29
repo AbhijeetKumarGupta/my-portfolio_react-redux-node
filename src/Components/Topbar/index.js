@@ -38,47 +38,53 @@ class Topbar extends Component {
             Home
           </span>
 
-          <span
+          <a
+            href="#about"
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(0.935)}
+            // onClick={() => this.scrollTo(0.935)}
           >
             About
-          </span>
+          </a>
 
-          <span
+          <a
+            href="#experience"
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(1.845)}
+            // onClick={() => this.scrollTo(1.845)}
           >
             Experience
-          </span>
+          </a>
 
-          <span
+          <a
+            href="#skills"
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(2.75)}
+            // onClick={() => this.scrollTo(2.75)}
           >
             Skills
-          </span>
+          </a>
 
-          <span
+          <a
+            href="#certificates"
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(3.66)}
+            // onClick={() => this.scrollTo(3.66)}
           >
             Certification
-          </span>
+          </a>
 
-          <span
+          <a
+            href="#projects"
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(4.55)}
+            // onClick={() => this.scrollTo(4.55)}
           >
             Projects
-          </span>
+          </a>
 
-          <span
+          <a
+            href="#contact"
             className={styles.navMenuItem}
-            onClick={() => this.scrollTo(5.55)}
+            // onClick={() => this.scrollTo(5.55)}
           >
             Contact
-          </span>
+          </a>
         </div>
       </div>
     );

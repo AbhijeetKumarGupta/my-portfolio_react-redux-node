@@ -12,37 +12,42 @@ class Certifications extends Component {
 
   render() {
     return (
-      <div id={styles.certification} className={styles.certificationDiv}>
-        <div id={styles.certifictionHeading}>
-          <span>Certification's</span>
-        </div>
-        <div id={styles.certificationCardsDiv}>
-          {this.props.certData.length > 0 &&
-            this.props.certData.map(
-              ({ instLink, instLogo, cerLink, certName, skillName }, index) => (
-                <div className={styles.certCard} key={index}>
-                  <a
-                    href={instLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={styles.certInstLogo}
-                  >
-                    <img src={instLogo} alt="" />
-                  </a>
-                  <a
-                    href={cerLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={styles.certDetails}
-                  >
-                    <p className={styles.certName}>{certName}</p>
-                    <p className={styles.keySkillName}>
-                      Key Skill: <span>{skillName}</span>
-                    </p>
-                  </a>
-                </div>
-              )
-            )}
+      <div id="certificates">
+        <div id={styles.certification} className={styles.certificationDiv}>
+          <div id={styles.certifictionHeading}>
+            <span>Certification's</span>
+          </div>
+          <div id={styles.certificationCardsDiv}>
+            {this.props.certData.length > 0 &&
+              this.props.certData.map(
+                (
+                  { instLink, instLogo, cerLink, certName, skillName },
+                  index
+                ) => (
+                  <div className={styles.certCard} key={index}>
+                    <a
+                      href={instLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={styles.certInstLogo}
+                    >
+                      <img src={instLogo} alt="" />
+                    </a>
+                    <a
+                      href={cerLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={styles.certDetails}
+                    >
+                      <p className={styles.certName}>{certName}</p>
+                      <p className={styles.keySkillName}>
+                        Key Skill: <span>{skillName}</span>
+                      </p>
+                    </a>
+                  </div>
+                )
+              )}
+          </div>
         </div>
       </div>
     );
