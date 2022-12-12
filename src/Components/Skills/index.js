@@ -6,7 +6,7 @@ import styles from "./skills.module.css";
 
 class Skills extends Component {
   componentDidMount() {
-    fetch("https://pf-backend-api.herokuapp.com/skills")
+    fetch("https://pf-backend-api.onrender.com/skills")
       .then((res) => res.json())
       .then((result) => this.props.setSkills(result));
   }

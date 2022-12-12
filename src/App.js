@@ -34,7 +34,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://pf-backend-api.herokuapp.com/others")
+    fetch("https://pf-backend-api.onrender.com/others")
       .then((res) => res.json())
       .then((result) => {
         this.props.setLogo(result[0].otherImages.topbarLogo);

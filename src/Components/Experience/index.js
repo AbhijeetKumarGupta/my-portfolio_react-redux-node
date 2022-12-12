@@ -10,7 +10,7 @@ class Experience extends Component {
   }
 
   componentDidMount() {
-    fetch("https://pf-backend-api.herokuapp.com/companies")
+    fetch("https://pf-backend-api.onrender.com/companies")
       .then((res) => res.json())
       .then((result) => this.setState({ expData: result }));
   }

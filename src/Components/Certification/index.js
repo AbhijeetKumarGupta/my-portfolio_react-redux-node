@@ -5,7 +5,7 @@ import styles from "./certifications.module.css";
 
 class Certifications extends Component {
   componentDidMount() {
-    fetch("https://pf-backend-api.herokuapp.com/certificates")
+    fetch("https://pf-backend-api.onrender.com/certificates")
       .then((res) => res.json())
       .then((result) => this.props.setCertifications(result));
   }

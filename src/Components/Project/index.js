@@ -12,7 +12,7 @@ import styles from "./projects.module.css";
 
 class Project extends Component {
   componentDidMount() {
-    fetch("https://pf-backend-api.herokuapp.com/projects")
+    fetch("https://pf-backend-api.onrender.com/projects")
       .then((res) => res.json())
       .then((result) => {
         this.props.setProjects(result.reverse());
