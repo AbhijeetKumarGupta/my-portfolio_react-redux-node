@@ -9,13 +9,17 @@ class Home extends Component {
     };
     return (
       <div id={styles.home} className={styles.homeDiv} style={style}>
-        <span id={styles.helloPara}>Hello!</span>
-        <p id={styles.namePara}>
-          I'm, <span>Abhijeet Kumar Gupta</span>
-        </p>
-        <span id={styles.welcomePara}>
-          <span>MERN</span> Stack Developer
-        </span>
+        <div id={styles.parent}>
+          <span id={styles.helloPara}>Hello!</span>
+          <p id={styles.namePara}>
+            I'm, <span>Abhijeet Kumar Gupta</span>
+          </p>
+          <span id={styles.welcomeParaContainer}>
+            <span id={styles.welcomePara}>
+              <span>MERN</span> Stack Developer
+            </span>
+          </span>
+        </div>
       </div>
     );
   }
